@@ -1,0 +1,42 @@
+.navbar{
+    text-align: center;
+    background-color: #17177dc5;
+    color:#ffffff;
+}
+
+/*.contenedorNavbar{
+    margin: 10px; 
+    padding: 5px;
+}*/
+
+.inicio{
+    margin: 10px;
+}
+
+.limpieza{
+    margin: 10px;
+}
+
+.hidratacion{
+    margin: 10px;
+}
+
+.nocturno{
+    margin: 10px;
+}
+
+.lociones{
+    margin: 10px;
+}
+
+.solar{
+    margin: 10px;
+}
+
+.contacto{
+    margin: 10px;
+}
+
+.quienesSomos{
+    margin: 10px;
+}
