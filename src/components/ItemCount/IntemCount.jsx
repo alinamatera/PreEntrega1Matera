@@ -1,15 +1,16 @@
-import { useState } from "react";
+import { useCount } from "../../hoocks/useCount"
 
-export const ItemCount = () =>{
-    const [contador, setContador] = useState(1)
+export const ItemCount = ({ ValInicial, min, max }) => {
 
-    const sum = () => setContador(contador + 1)
-    const res = () => setContador(contador - 1)
-    return(
-        <div>
-            <button onClick={() => res()}>-</button>
-            {contador}
-            <button onClick={() => sum()}>+</button>
-        </div>
-    )
+  const { count, minus, sum, reset } = useCount(ValInicial, min, max)
+
+  return (
+    <>
+      <button className="btn btn-dark" onClick={minus}>-</button>
+      {count}
+      <button className="btn btn-dark" onClick={sum}>+</button>
+      <button className="btn btn-dark" onClick={reset}>Reset</button>
+      <button className="btn btn-light">Agregar al Carrito</button>
+    </>
+  )
 }

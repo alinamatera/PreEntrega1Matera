@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "idCategoria": 1,
+        "nombre": "Gel de limpieza",
+        "marca": "Dermaglos",
+        "precio": 1500,
+        "stock": 15,
+        "img": "/img/gelLimpieza.jpg"
+    },
+    {
+        "id": 2,
+        "idCategoria": 1,
+        "nombre": "Leche de limpieza",
+        "marca": "Dermaglos",
+        "precio": 1500,
+        "stock": 15,
+        "img": "/img/lecheLimpieza.jpg"
+    },
+    
+    {
+        "id": 3,
+        "idCategoria": 4,
+        "nombre": "Loción facial refrescante",
+        "marca": "LACA",
+        "precio": 1000,
+        "stock": 15,
+        "img": "/img/locionFacial.jpg"
+    },
+    
+    {
+        "id": 4,
+        "idCategoria": 4,
+        "nombre": "Loción tónica facial",
+        "marca": "Nivea",
+        "precio": 1000,
+        "stock": 15,
+        "img": "/img/locionTonica.jpg"
+    },
+    
+    {
+        "id": 5,
+        "idCategoria": 2,
+        "nombre": "Gel regenerador de epitelio",
+        "marca": "Fórmula Bustos",
+        "precio": 2000,
+        "stock": 15,
+        "img": "/img/regeneradorEpitelio.jpg"
+    },
+    
+    {
+        "id": 6,
+        "idCategoria": 2,
+        "nombre": "Gel liposomado",
+        "marca": "Fórmula Bustos",
+        "precio": 2000,
+        "stock": 15,
+        "img": "/img/gelLiposomado.jpg"
+    },
+    
+    {
+        "id": 7,
+        "idCategoria": 3,
+        "nombre": "Ácido mandélico",
+        "marca": "Fórmula Bustos",
+        "precio": 2500,
+        "stock": 15,
+        "img": "/img/acidoMandelico.jpg"
+    },
+    
+    {
+        "id": 8,
+        "idCategoria": 3,
+        "nombre": "Ácido láctico",
+        "marca": "Fórmula Bustos",
+        "precio": 2500,
+        "stock": 15,
+        "img": "/img/acidoLactico.jpg"
+    },
+    
+    {
+        "id": 9,
+        "idCategoria": 3,
+        "nombre": "Gel exfoliante",
+        "marca": "Nivea",
+        "precio": 2500,
+        "stock": 15,
+        "img": "/img/gelExfoliante.jpg"
+    },
+    
+    {
+        "id": 10,
+        "idCategoria": 5,
+        "nombre": "Protector solar con color",
+        "marca": "Bagóvit",
+        "precio": 3000,
+        "stock": 15,
+        "img": "/img/solarColor.jpg"
+    },
+    
+    {
+        "id": 11,
+        "idCategoria": 5,
+        "nombre": "Protector solar sin color",
+        "marca": "Dermaglós",
+        "precio": 3000,
+        "stock": 15,
+        "img": "/img/solar.jpg"
+    },
+    
+    {
+        "id": 12,
+        "idCategoria": 4,
+        "nombre": "Loción sebo control",
+        "marca": "Fórmula Bustos",
+        "precio": 3500,
+        "stock": 15,
+        "img": "/img/seboControl.jpg"
+    },
+    
+    {
+        "id": 13,
+        "idCategoria": 4,
+        "nombre": "Loción secativa",
+        "marca": "Fórmula Bustos",
+        "precio": 3500,
+        "stock": 15,
+        "img": "/img/secativa.jpg"
+    }
+]

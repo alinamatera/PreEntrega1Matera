@@ -1,14 +1,23 @@
 import './App.css'
-/*import { ItemCount } from './ItemCount/IntemCount.jsx'*/
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from './Navbar/Navbar.jsx'
 import { ItemListContainer } from './ItemListContainer/ItemListContainer.jsx'
+import { ItemDetailContainer } from './ItemDetailContainer/ItemDetailContainer'
+import { Checkout } from './Checkout/Checkout';
 export const App = () => {
   return (
     <div className='contenedorApp'>
-      <Navbar/>
-      <ItemListContainer greeting={'Productos de Skincare'}/>
+      <BrowserRouter>
+        <Navbar/>
+          <Routes>
+            <Route path='/' element={<ItemListContainer/>}/>
+            <Route path='/category/:category' element={<ItemListContainer/>}/>
+            <Route path='/product/:id' element={<ItemDetailContainer/>}/>
+            <Route path='/checkout' element={<Checkout/>}/>
+            <Route path='*' element={<h1>404 Not Found</h1>}/>
+
+          </Routes>
+      </BrowserRouter>
     </div>
   )
 }
-
-/*<ItemCount/>*/
