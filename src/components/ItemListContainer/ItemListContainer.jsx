@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react"
 import { ItemList } from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
+import { useDarkModeContext } from "../../context/darkModeContext"
 
 export const ItemListContainer = () => {
 
   const [productos, setProductos] = useState([])
   const { category } = useParams()
-
+  const { darkMode } = useDarkModeContext()
+  console.log(darkMode)
   useEffect(() => {
 
     if (category) {
@@ -31,7 +33,7 @@ export const ItemListContainer = () => {
 
   return (
     <div className="row">
-      {<ItemList productos={productos} />}
+      {<ItemList productos={productos} plantilla={"Item"}/>}
     </div>
   )
 }
