@@ -6,7 +6,7 @@
         "marca": "Dermaglos",
         "precio": 1500,
         "stock": 15,
-        "img": "/img/gelLimpieza.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/proyectofinal-matera.appspot.com/o/gelLimpieza.jpg?alt=media&token=6744c49d-5908-458f-8d7e-9d8842dc7a1a"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "marca": "Dermaglos",
         "precio": 1500,
         "stock": 15,
-        "img": "/img/lecheLimpieza.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/proyectofinal-matera.appspot.com/o/lecheLimpieza.jpg?alt=media&token=1ca5a24f-f1b1-4515-9475-35e70070d252"
     },
     
     {
@@ -25,7 +25,7 @@
         "marca": "LACA",
         "precio": 1000,
         "stock": 15,
-        "img": "/img/locionFacial.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/proyectofinal-matera.appspot.com/o/locionFacial.jpg?alt=media&token=10aec55a-fa8e-4051-a0ca-dcf227497a2f"
     },
     
     {
@@ -35,7 +35,7 @@
         "marca": "Nivea",
         "precio": 1000,
         "stock": 15,
-        "img": "/img/locionTonica.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/proyectofinal-matera.appspot.com/o/locionTonica.jpg?alt=media&token=51b20a61-41c7-4443-98cf-e303c3dc5787"
     },
     
     {
@@ -45,7 +45,7 @@
         "marca": "Fórmula Bustos",
         "precio": 2000,
         "stock": 15,
-        "img": "/img/regeneradorEpitelio.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/proyectofinal-matera.appspot.com/o/regeneradorEpitelio.jpg?alt=media&token=48c7c52a-cdcc-4aa4-b489-07864a3b854d"
     },
     
     {
@@ -55,7 +55,7 @@
         "marca": "Fórmula Bustos",
         "precio": 2000,
         "stock": 15,
-        "img": "/img/gelLiposomado.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/proyectofinal-matera.appspot.com/o/gelLiposomado.jpg?alt=media&token=1a65817b-f52b-4203-9383-ad6e7a46a4c8"
     },
     
     {
@@ -65,7 +65,7 @@
         "marca": "Fórmula Bustos",
         "precio": 2500,
         "stock": 15,
-        "img": "/img/acidoMandelico.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/proyectofinal-matera.appspot.com/o/acidoMandelico.jpg?alt=media&token=499922ef-51fc-4ac9-8f98-08646f46e56c"
     },
     
     {
@@ -75,7 +75,7 @@
         "marca": "Fórmula Bustos",
         "precio": 2500,
         "stock": 15,
-        "img": "/img/acidoLactico.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/proyectofinal-matera.appspot.com/o/acidoLactico.jpg?alt=media&token=c8df11f6-63bc-4097-8a2a-57aa1b710bb5"
     },
     
     {
@@ -85,7 +85,7 @@
         "marca": "Nivea",
         "precio": 2500,
         "stock": 15,
-        "img": "/img/gelExfoliante.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/proyectofinal-matera.appspot.com/o/gelExfoliante.jpg?alt=media&token=b50eb30b-3831-435b-9d12-657dd8e047f8"
     },
     
     {
@@ -95,7 +95,7 @@
         "marca": "Bagóvit",
         "precio": 3000,
         "stock": 15,
-        "img": "/img/solarColor.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/proyectofinal-matera.appspot.com/o/solarColor.jpg?alt=media&token=751a5949-0b60-428c-b595-4f1267d04454"
     },
     
     {
@@ -105,7 +105,7 @@
         "marca": "Dermaglós",
         "precio": 3000,
         "stock": 15,
-        "img": "/img/solar.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/proyectofinal-matera.appspot.com/o/solar.jpg?alt=media&token=f0d267e3-8a9d-4a48-bfbf-e2007b8b33b4"
     },
     
     {
@@ -115,7 +115,7 @@
         "marca": "Fórmula Bustos",
         "precio": 3500,
         "stock": 15,
-        "img": "/img/seboControl.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/proyectofinal-matera.appspot.com/o/seboControl.jpg?alt=media&token=4bbb940a-5b9f-4c8d-aaf1-6ec98e47b12b"
     },
     
     {
@@ -125,6 +125,6 @@
         "marca": "Fórmula Bustos",
         "precio": 3500,
         "stock": 15,
-        "img": "/img/secativa.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/proyectofinal-matera.appspot.com/o/secativa.jpg?alt=media&token=35db90c8-230c-4662-bbd6-feca321ed889"
     }
 ]

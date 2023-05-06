@@ -13,7 +13,7 @@ export const ItemCart = ({ item }) => {
                         <p className="card-text">Cantidad: {item.quantity}</p>
                         <p className="card-text">Precio Unitario:$ {item.precio}</p>
                         <p className="card-text">Subtotal: ${item.precio * item.quantity}</p>
-                        <button className="btn btn-danger" onClick={() => removeItem(item.id)}><i class="fa-solid fa-trash"></i></button>
+                        <button className="btn btn-danger" onClick={() => removeItem(item.id)}><i className="fas fa-trash-alt"></i></button>
                     </div>
                 </div>
             </div>

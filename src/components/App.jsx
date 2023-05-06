@@ -6,11 +6,15 @@ import { ItemListContainer } from './ItemListContainer/ItemListContainer.jsx'
 import { ItemDetailContainer } from './ItemDetailContainer/ItemDetailContainer'
 import { Checkout } from './Checkout/Checkout';
 import { Cart } from './Cart/cart'
+import { CarritoProvider } from '../context/CartContext';
+import { createProducts } from '../farebase/farebase.js';
 
 export const App = () => {
+    createProducts()
   return (
     <div className='contenedorApp'>
       <BrowserRouter>
+      <CarritoProvider>
         <DarkModeProvider>  
             <Navbar/>
               <Routes>
@@ -21,7 +25,8 @@ export const App = () => {
                 <Route path='/cart' element={<Cart />} />
                 <Route path='*' element={<h1>404 Not Found</h1>}/>
               </Routes>
-        </DarkModeProvider>      
+        </DarkModeProvider>
+        </CarritoProvider>      
         </BrowserRouter>
     </div>
   )
