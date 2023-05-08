@@ -1,17 +1,55 @@
 import { useRef } from "react";
 import { useCarritoContext } from "../../context/CartContext";
-import { Link } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
+import { createOrdenCompra, getProduct, updateProduct } from "../../farebase/farebase";
+import { toast } from "react-toastify/dist/components";
 
 export const Checkout = () => {
     const datForm = useRef()
-    const {carrito, totalprice,emptyCart} = useCarritoContext()
+    const {carrito, totalPrice,emptyCart} = useCarritoContext()
 
+
+    let navigate = useNavigate()
     const consultarForm = (e) => {
         e.preventDefault()
         const datosFormulario = new FormData(datForm.current)
         const cliente = Object.fromEntries(datosFormulario)
-        console.log(cliente)
-        e.target.reset()
+
+        const aux = [...carrito]
+
+        aux.forEach(prodCarrito => {
+            getProduct(prodCarrito.id).then(prodBBD => {
+                if(prodBBD.stock >= prodCarrito.quantity) {
+                    prodBBD.stock -= prodCarrito.quantity
+                    updateProduct(prodBBD.id, prodBBD)
+                } else {
+                    console.log("El stock no es válido")
+                }
+            })
+        })
+
+        const aux2 = aux.map(prod => ({id: prod.id, quantity: prod.quantity, precio: prod.precio}))
+
+        createOrdenCompra(cliente, totalPrice(),aux, new Date().toLocaleString('es-AR', {timeZone:Intl.DateTimeFormat().resolvedOptions().timeZone})).then(ordenCompra => {
+            toast(`🛒 Muchas gracias por realizar la compra. Su ID de compra es ${ordenCompra.id} y un total de ${totalPrice()}.`, {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
+            emptyCart()
+            e.target.reset()
+            navigate("/")
+
+        })
+        .catch(error =>{
+            console.error(error)
+        })
+
     }
     return (
         <>

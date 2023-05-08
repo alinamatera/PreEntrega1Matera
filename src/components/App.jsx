@@ -8,15 +8,18 @@ import { Checkout } from './Checkout/Checkout';
 import { Cart } from './Cart/cart'
 import { CarritoProvider } from '../context/CartContext';
 import { createProducts } from '../farebase/farebase.js';
-
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export const App = () => {
-    createProducts()
+    //createProducts()
+
   return (
     <div className='contenedorApp'>
       <BrowserRouter>
       <CarritoProvider>
         <DarkModeProvider>  
             <Navbar/>
+            <ToastContainer/>
               <Routes>
                 <Route path='/' element={<ItemListContainer/>}/>
                 <Route path='/category/:category' element={<ItemListContainer/>}/>
