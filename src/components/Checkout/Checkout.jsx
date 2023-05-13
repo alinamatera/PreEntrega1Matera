@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { useCarritoContext } from "../../context/CartContext";
 import { Link, useNavigate} from "react-router-dom";
 import { createOrdenCompra, getProduct, updateProduct } from "../../farebase/farebase";
-import { toast } from "react-toastify/dist/components";
 
 export const Checkout = () => {
     const datForm = useRef()
@@ -31,16 +30,7 @@ export const Checkout = () => {
         const aux2 = aux.map(prod => ({id: prod.id, quantity: prod.quantity, precio: prod.precio}))
 
         createOrdenCompra(cliente, totalPrice(),aux, new Date().toLocaleString('es-AR', {timeZone:Intl.DateTimeFormat().resolvedOptions().timeZone})).then(ordenCompra => {
-            toast(`🛒 Muchas gracias por realizar la compra. Su ID de compra es ${ordenCompra.id} y un total de ${totalPrice()}.`, {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "light",
-                });
+           alert(`🛒 Muchas gracias por realizar la compra. Su ID de compra es "${ordenCompra.id}" y el total es de ${totalPrice()}.`)
             emptyCart()
             e.target.reset()
             navigate("/")
